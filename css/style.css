@@ -1,0 +1,71 @@
+/* =========================================
+   Profile Card - Stylesheet
+   ========================================= */
+
+:root {
+  --color-text: #414f57;
+  --color-heading: #313f47;
+  --color-border: #c8cccf;
+  --color-card: #ffffff;
+  --color-accent: #ff7496;
+  --radius: 4px;
+  --spacing: 1.5rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  padding: 2rem 1rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  font-family: "Source Sans 3", Helvetica, sans-serif;
+  font-size: 1.15rem;
+  font-weight: 300;
+  line-height: 1.65;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-text);
+
+  /* Farbverlauf über dem Hintergrundbild */
+  background-color: #e1dfe8;
+  background-image:
+    linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)),
+    url("../images/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+
+/* ---------- Karte ---------- */
+
+.card {
+  width: 100%;
+  max-width: 34rem;
+  padding: 4.5rem 3rem;
+  background-color: var(--color-card);
+  border-radius: var(--radius);
+  opacity: 0.95;
+  text-align: center;
+}
+
+.card h1 {
+  margin: 0 0 1rem;
+  font-size: 1.85em;
+  font-weight: 300;
+  letter-spacing: 0.22em;
+  color: var(--color-heading);
+}
+
+.subtitle {
+  margin: 0;
+  font-size: 0.8em;
+}
