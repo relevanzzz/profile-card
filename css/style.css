@@ -69,3 +69,32 @@ body {
   margin: 0;
   font-size: 0.8em;
 }
+
+
+/* ---------- Profilbild ---------- */
+
+.avatar {
+  position: relative;
+  margin-bottom: var(--spacing);
+}
+
+/* Linie links und rechts vom Bild */
+.avatar::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -3rem;
+  right: -3rem;
+  height: 1px;
+  background-color: var(--color-border);
+}
+
+.avatar img {
+  position: relative;
+  display: block;
+  width: 122px;
+  height: 122px;
+  margin: 0 auto;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1.5rem var(--color-card);
+}
