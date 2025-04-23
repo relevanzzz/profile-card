@@ -164,4 +164,9 @@ body {
   .card h1 {
     font-size: 1.5em;
   }
+
+  .avatar::before {
+    left: -1.5rem;
+    right: -1.5rem;
+  }
 }
