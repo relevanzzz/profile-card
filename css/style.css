@@ -150,6 +150,30 @@ body {
 }
 
 
+/* ---------- Animation beim Laden ---------- */
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: rotateX(15deg);
+  }
+  to {
+    opacity: 0.95;
+    transform: rotateX(0deg);
+  }
+}
+
+.card {
+  animation: fade-in 1s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card {
+    animation: none;
+  }
+}
+
+
 /* ---------- Mobile ---------- */
 
 @media (max-width: 480px) {
